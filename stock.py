@@ -96,4 +96,4 @@ print()
 
 ## Save the model
 
-model.save('stock_price_model.h5')
+model.save('RNN.h5')

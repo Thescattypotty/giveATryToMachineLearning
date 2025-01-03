@@ -26,8 +26,11 @@ plt.show()
 
 ## Couche de prétraitement
 data_augmentation = tf.keras.Sequential([
+    # Applique un retournement horizontal aléatoire
     tf.keras.layers.RandomFlip("horizontal", input_shape=(img_height, img_width, 3)),
+    # Applique une rotation aléatoire jusqu'à 10%
     tf.keras.layers.RandomRotation(0.1),
+    # Applique un zoom aléatoire jusqu'à 10%
     tf.keras.layers.RandomZoom(0.1),
 ])
 
@@ -84,4 +87,4 @@ plt.title("Loss")
 plt.show()
 
 ## Save the model
-modelCNN.save("fruit_model.h5")
+modelCNN.save("CNN.h5")

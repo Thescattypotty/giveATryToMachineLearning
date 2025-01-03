@@ -66,4 +66,4 @@ loss, accuracy = model.evaluate(test_features, test_labels)
 print(f'Loss: {loss}, Accuracy: {accuracy}')
 
 ## Save the model
-model.save('final_auto_model.h5')
+model.save('CNN.h5')
